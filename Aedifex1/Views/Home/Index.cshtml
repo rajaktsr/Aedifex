@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="landing-page">
+    <header class="header">
+        <div class="container">
+            <h1 class="display-4">Welcome to Our Website</h1>
+            <p class="lead">Discover the power of building Web apps with ASP.NET Core.</p>
+            <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
+        </div>
+    </header>
+
+    <section id="carousel" class="carousel-section">
+        <div class="container">
+            <div class="carousel">
+                <div class="carousel-item">Slide 1</div>
+                <div class="carousel-item">Slide 2</div>
+                <div class="carousel-item">Slide 3</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Feature One</h2>
+                    <p>Detail about feature one.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Feature Two</h2>
+                    <p>Detail about feature two.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Feature Three</h2>
+                    <p>Detail about feature three.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="gallery">
+                <div class="gallery-item">Image 1</div>
+                <div class="gallery-item">Image 2</div>
+                <div class="gallery-item">Image 3</div>
+                <div class="gallery-item">Image 4</div>
+                <div class="gallery-item">Image 5</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Information about your company or project.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+<style>
+    .landing-page {
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        background: #007bff;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .carousel-section {
+        background: #f8f9fa;
+        padding: 50px 0;
+    }
+
+    .carousel {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+    }
+
+    .carousel-item {
+        min-width: 300px;
+        height: 200px;
+        background: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .features-section, .about-section {
+        padding: 50px 0;
+    }
+
+    .gallery-section {
+        background: #f8f9fa;
+        padding: 50px 0;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .gallery-item {
+        background: #ccc;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .footer {
+        background: #f8f9fa;
+        padding: 20px 0;
+        text-align: center;
+    }
+</style>

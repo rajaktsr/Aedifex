@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+
+<div class="about-page">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li>
+                    <li class="nav-item"><<a href="/Home/Products">Products</a>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container text-center text-white">
+            <h1>About Us</h1>
+            <p>Learn more about our mission, values, and team.</p>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Our Story</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                    <p>Cras venenatis euismod malesuada. Maecenas sit amet pulvinar turpis, eget volutpat nisl.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="About us image">
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col">
+                    <h2>Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col">
+                    <h2>Our Team</h2>
+                    <p>Meet the amazing people behind our company:</p>
+                    <ul>
+                        <li>Person A - CEO</li>
+                        <li>Person B - CTO</li>
+                        <li>Person C - Lead Developer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+<style>
+    .about-page {
+        font-family: Arial, sans-serif;
+    }
+    .hero-section {
+        background: #007bff;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+    }
+    .content-section {
+        padding: 50px 0;
+    }
+    .footer {
+        background: #f8f9fa;
+        padding: 20px 0;
+        text-align: center;
+    }
+</style>

@@ -7,25 +7,21 @@
 
     <!-- Fabric Section -->
     <section class="fabric-section text-center">
-        <h2>Fabric for Varsity Jacket</h2>
         <div class="fabric-options">
             <div class="option">
-                <h3>Varsity Grade A+</h3>
-                <p>Detail tentang Grade A+.</p>
-            </div>
-            <div class="option">
-                <h3>Varsity Grade A</h3>
-                <p>Detail tentang Grade A.</p>
+                <img src="/ASSETS/Fabric.jpg">
             </div>
         </div>
     </section>
+</div>
+
 
     <!-- Mitra AEDIFEX -->
     <section class="partners-section text-center">
         <h2>Mitra AEDIFEX</h2>
         <div class="partners-grid">
-            <img src="/path-to-partner1.png" alt="Partner 1">
-            <img src="/path-to-partner2.png" alt="Partner 2">
+        <img src="/ASSETS/LOGO-SMANSA.jpg">
+        <img src="/ASSETS/LOGOsmaittunasbangsa.jpg">
             <!-- Tambahkan logo lainnya -->
         </div>
     </section>
@@ -35,47 +31,36 @@
         <h2>Testimonials</h2>
         <div class="testimonial-slider">
             <div class="testimonial-item">
-                <img src="/path-to-testimonial1.jpg" alt="Testimonial 1">
-                <p>SMAIT Tunas Bangsa</p>
-                <p>⭐⭐⭐⭐⭐</p>
-            </div>
-            <div class="testimonial-item">
-                <img src="/path-to-testimonial2.jpg" alt="Testimonial 2">
+                <img src="/ASSETS/TESTIMONI SMAIT TUNAS BANGSA.jpg">
                 <p>SMAIT Tunas Bangsa</p>
                 <p>⭐⭐⭐⭐⭐</p>
             </div>
         </div>
     </section>
 
-    <!-- Why Us -->
-    <section class="why-us-section text-center">
-        <h2>Why Us?</h2>
-        <p>2 years experience</p>
-        <p>Lebih dari 14.000 jaket angkatan...</p>
-    </section>
+<section class="why-us-section text-center">
+    <h2>Why Us?</h2>
+    <div class="why-us-content">
+        <img src="~/ASSETS/WHYUS-2YRS.jpg" alt="2 years experience">
+    </div>
+</section>
 
-    <!-- Keunggulan -->
-    <section class="advantages-section text-center">
-        <h2>Keunggulan</h2>
-        <ul>
-            <li><strong>Aman</strong></li>
-            <li><strong>Terpercaya</strong></li>
-            <li><strong>Bergaransi</strong></li>
-        </ul>
-    </section>
+<section class="advantages-section text-center">
+    <div class="advantages-content">
+        <img src="~/ASSETS/WHYUS-3A.jpg" alt="Advantages">
+    </div>
+</section>
 
-    <!-- Produk Kami -->
-    <section class="products-section text-center">
-        <h2>Our Products</h2>
-        <div class="products-grid">
-            <div class="product-item">
-                <img src="/path-to-varsity.jpg" alt="Varsity">
-                <p>Varsity</p>
-            </div>
-            <!-- Tambahkan produk lainnya -->
+<section class="products-section text-center">
+    <div class="products-grid">
+        <div class="product-item">
+            <p class="product-title">Our Products</p>
+            <img src="/ASSETS/OUR PRODUCT.jpg" alt="Our Product">
         </div>
-    </section>
-</div>
+    </div>
+</section>
+
+
 
 <style>
     /* Sesuaikan CSS sesuai desain */
@@ -103,12 +88,73 @@
         padding: 50px 20px;
     }
 
-    .fabric-options, .partners-grid, .testimonial-slider, .products-grid {
+    .fabric-options, , .testimonial-slider, .products-grid, {
         display: flex;
         justify-content: center;
         gap: 20px;
         flex-wrap: wrap;
     }
+
+    .partners-grid img {
+        width: 150px; /* Ubah nilai ini untuk menyesuaikan lebar logo */
+        height: auto; /* Menjaga aspek rasio logo */
+        object-fit: contain; /* Memastikan logo tidak terpotong */
+        margin: 10px; /* Beri jarak antar logo */
+    }
+
+    .why-us-section {
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .why-us-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; /* Tambahkan jarak antara teks dan gambar */
+    }
+
+    .advantages-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .products-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-item {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .product-title {
+        position: absolute;
+        top: 10px; /* Atur jarak dari atas */
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.5); /* Tambahkan latar belakang transparan */
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 1.2em;
+        z-index: 1;
+    }
+
+    .products-section img,
+    .why-us-content img,
+    .advantages-content img {
+        width: 100%; /* Membuat gambar menyesuaikan dengan lebar kontainer */
+        height: auto; /* Menjaga proporsi gambar */
+        max-width: 100%; /* Pastikan gambar tidak melampaui ukuran halaman */
+        display: block; /* Menghilangkan jarak default pada inline elements */
+        margin: 0 auto; /* Untuk memastikan gambar tetap terpusat */
+    }
+
+
 
         .fabric-options .option, .testimonial-item, .product-item {
             background: #1a1a1a;

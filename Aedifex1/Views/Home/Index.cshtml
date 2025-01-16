@@ -3,131 +3,117 @@
 }
 
 <div class="landing-page">
-    <header class="header">
-        <div class="container">
-            <h1 class="display-4">Welcome to Our Website</h1>
-            <p class="lead">Discover the power of building Web apps with ASP.NET Core.</p>
-            <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
-        </div>
-    </header>
+    <!-- Header -->
 
-    <section id="carousel" class="carousel-section">
-        <div class="container">
-            <div class="carousel">
-                <div class="carousel-item">Slide 1</div>
-                <div class="carousel-item">Slide 2</div>
-                <div class="carousel-item">Slide 3</div>
+    <!-- Fabric Section -->
+    <section class="fabric-section text-center">
+        <h2>Fabric for Varsity Jacket</h2>
+        <div class="fabric-options">
+            <div class="option">
+                <h3>Varsity Grade A+</h3>
+                <p>Detail tentang Grade A+.</p>
+            </div>
+            <div class="option">
+                <h3>Varsity Grade A</h3>
+                <p>Detail tentang Grade A.</p>
             </div>
         </div>
     </section>
 
-    <section id="features" class="features-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Feature One</h2>
-                    <p>Detail about feature one.</p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Feature Two</h2>
-                    <p>Detail about feature two.</p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Feature Three</h2>
-                    <p>Detail about feature three.</p>
-                </div>
+    <!-- Mitra AEDIFEX -->
+    <section class="partners-section text-center">
+        <h2>Mitra AEDIFEX</h2>
+        <div class="partners-grid">
+            <img src="/path-to-partner1.png" alt="Partner 1">
+            <img src="/path-to-partner2.png" alt="Partner 2">
+            <!-- Tambahkan logo lainnya -->
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section text-center">
+        <h2>Testimonials</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-item">
+                <img src="/path-to-testimonial1.jpg" alt="Testimonial 1">
+                <p>SMAIT Tunas Bangsa</p>
+                <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="/path-to-testimonial2.jpg" alt="Testimonial 2">
+                <p>SMAIT Tunas Bangsa</p>
+                <p>⭐⭐⭐⭐⭐</p>
             </div>
         </div>
     </section>
 
-    <section id="gallery" class="gallery-section">
-        <div class="container">
-            <div class="gallery">
-                <div class="gallery-item">Image 1</div>
-                <div class="gallery-item">Image 2</div>
-                <div class="gallery-item">Image 3</div>
-                <div class="gallery-item">Image 4</div>
-                <div class="gallery-item">Image 5</div>
+    <!-- Why Us -->
+    <section class="why-us-section text-center">
+        <h2>Why Us?</h2>
+        <p>2 years experience</p>
+        <p>Lebih dari 14.000 jaket angkatan...</p>
+    </section>
+
+    <!-- Keunggulan -->
+    <section class="advantages-section text-center">
+        <h2>Keunggulan</h2>
+        <ul>
+            <li><strong>Aman</strong></li>
+            <li><strong>Terpercaya</strong></li>
+            <li><strong>Bergaransi</strong></li>
+        </ul>
+    </section>
+
+    <!-- Produk Kami -->
+    <section class="products-section text-center">
+        <h2>Our Products</h2>
+        <div class="products-grid">
+            <div class="product-item">
+                <img src="/path-to-varsity.jpg" alt="Varsity">
+                <p>Varsity</p>
             </div>
+            <!-- Tambahkan produk lainnya -->
         </div>
     </section>
-
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Information about your company or project.</p>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2023 Your Company. All rights reserved.</p>
-        </div>
-    </footer>
 </div>
 
 <style>
-    .landing-page {
+    /* Sesuaikan CSS sesuai desain */
+    body {
+        background: #000;
+        color: #fff;
         font-family: Arial, sans-serif;
+        margin: 0;
     }
 
     .header {
-        background: #007bff;
-        color: white;
-        padding: 100px 0;
-        text-align: center;
+        background: #000;
+        border-bottom: 1px solid #fff;
+        padding: 10px 20px;
     }
 
-    .carousel-section {
-        background: #f8f9fa;
-        padding: 50px 0;
+        .header .nav-link {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+    .fabric-section, .partners-section, .testimonials-section, .why-us-section, .advantages-section, .products-section {
+        padding: 50px 20px;
     }
 
-    .carousel {
-        display: flex;
-        overflow-x: auto;
-        gap: 15px;
-    }
-
-    .carousel-item {
-        min-width: 300px;
-        height: 200px;
-        background: #ccc;
+    .fabric-options, .partners-grid, .testimonial-slider, .products-grid {
         display: flex;
         justify-content: center;
-        align-items: center;
-        border: 1px solid #ddd;
-        border-radius: 5px;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
-    .features-section, .about-section {
-        padding: 50px 0;
-    }
-
-    .gallery-section {
-        background: #f8f9fa;
-        padding: 50px 0;
-    }
-
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 15px;
-    }
-
-    .gallery-item {
-        background: #ccc;
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
-
-    .footer {
-        background: #f8f9fa;
-        padding: 20px 0;
-        text-align: center;
-    }
+        .fabric-options .option, .testimonial-item, .product-item {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
 </style>

@@ -22,11 +22,18 @@ namespace Aedifex1.Controllers
         {
             return View();
         }
+
         public IActionResult Products()
         {
-            return View();
-        }
+            var products = new List<Product>
+            {
+                new Product { Image = "/assets/catalog1.jpg", Name = "Product 1", Description = "Description for Product 1" },
+                new Product { Image = "/assets/catalog2.jpg", Name = "Product 2", Description = "Description for Product 2" },
+                // Tambahkan lebih banyak produk jika perlu
+            };
 
+            return View(products);
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

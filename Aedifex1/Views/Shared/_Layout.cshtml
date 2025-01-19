@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -10,9 +11,11 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Aedifex1</a>
+                <a href="@Url.Action("Index", "Home")" class="navbar-brand">
+             <img src="https://cdn.builder.io/api/v1/image/assets/c0fe919eaac64489a9f4a10f9a6e2749/59ecba908ff02c44533b95f663263464222c3397f5a28748c12c2e6073ab3193?apiKey=c0fe919eaac64489a9f4a10f9a6e2749&" alt="Aedifex Company Logo" class="logo" width="244" height="60" />
+         </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,13 +23,13 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"></a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">About us</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Products">Products</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Products">PRODUCTS</a>
                         </li>
                     </ul>
                 </div>
@@ -38,15 +41,40 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - Gunadarma PPSI
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-</html> 
+</html>
+
+<style>
+    .navbar {
+        background-color: #0A0A0A, 0.8;
+        width: 100%;
+        min-height: 128px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        letter-spacing: 1.44px;
+        padding: 42px 16px; /* Adjusted padding */
+        font: 500 24px Nohemi, -apple-system, BlinkMacSystemFont;
+        border-bottom: 1px solid #B8B8B8;
+        box-sizing: border-box;
+        position: fixed; /* Sticks to the top */
+        top: 0;
+        z-index: 1000; /* Ensure it stays above other elements */
+        backdrop-filter: blur(10px);
+    }
+
+    .container-fluid {
+        margin: 0;  
+    }
+
+    .navbar-collapse {
+    }
+
+    .nav-item {
+        padding-right: 76px;
+    }
+</style>

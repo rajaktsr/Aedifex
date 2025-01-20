@@ -1,6 +1,8 @@
 using System.Diagnostics;
 using Aedifex1.Models;
 using Microsoft.AspNetCore.Mvc;
+using WordPressPCL;
+using WordPressPCL.Client;
 
 namespace Aedifex1.Controllers
 {

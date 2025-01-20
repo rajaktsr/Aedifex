@@ -1,0 +1,291 @@
+﻿@{
+    var media = Model;
+}
+
+@{
+    ViewData["Title"] = "About Us";
+}
+
+
+<div class="content-wrapper">
+    <div class="main-content">
+        <div class="left-column">
+            <div class="about-content">
+                <h1 class="section-title">About Us</h1>
+                <div class="text-content">
+                    <p class="company-intro">
+                        AEDIFEX Company didirikan oleh Muhammad Daffa dan Faiz Fathir
+                        Rinzany Putra dan didukung oleh tim desainer dan staf yang
+                        berpengalaman. Kami berdedikasi untuk memberikan produk terbaik
+                        kepada pelanggan.
+                    </p>
+                    <p class="company-description">
+                        AEDIFEX Company merupakan perusahaan yang bergerak di bidang
+                        konveksi jaket angkatan, yang berfokus dalam memberikan layanan
+                        desain khusus. AEDIFEX Company memproduksi berbagai jenis
+                        pakaian seperti
+                        <span class="bold-text">crewneck</span>,
+                        <span class="bold-text">coach jacket</span>,
+                        <span class="bold-text">work jacket</span>,
+                        <span class="bold-text">hoodie</span>, dan
+                        <span class="bold-text">kaos</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            @if (media != null && !string.IsNullOrEmpty(media.SourceUrl))
+            {
+                <img src="@media.SourceUrl" alt="@media.Title.Rendered" />
+            }
+            else
+            {
+                <p>No media found or invalid URL.</p>
+            }
+        </div>
+    </div>
+    <div class="divider-section">
+        <div class="divider-line"></div>
+        <img src="https://cdn.builder.io/api/v1/image/assets/c0fe919eaac64489a9f4a10f9a6e2749/b671cfac147a8074086bf7477e712edff3e57aec87cd5c8b252862f28107f295?apiKey=c0fe919eaac64489a9f4a10f9a6e2749&" alt="" class="divider-icon" loading="lazy" />
+        <div class="divider-line-end"></div>
+    </div>
+    <div class="vision-section">
+        <div class="vision-content">
+            <div class="left-column">
+                <img src="https://cdn.builder.io/api/v1/image/assets/c0fe919eaac64489a9f4a10f9a6e2749/0344f95cc17b6c741899409e89dbb382aa3f7513f761e16624333464a0d344f3?apiKey=c0fe919eaac64489a9f4a10f9a6e2749&" alt="AEDIFEX Company vision illustration" class="vision-image" loading="lazy" />
+            </div>
+            <div class="right-column">
+                <div class="vision-text">
+                    <h2 class="vision-title">Visi & Misi</h2>
+                    <div class="vision-description">
+                        <p class="mission-text">
+                            Misi kami adalah memberikan layanan konveksi berkualitas tinggi
+                            dengan desain khusus yang memenuhi kebutuhan pelanggan.
+                        </p>
+                        <p class="vision-text-content">
+                            Visi kami adalah menjadi pemimpin dalam industri konveksi dengan
+                            fokus pada inovasi dan kepuasan pelanggan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="social-media-section">
+    <h3 class="social-title">Our Social Media</h3>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/aedifexcompany/">
+            <img src="https://cdn.builder.io/api/v1/image/assets/c0fe919eaac64489a9f4a10f9a6e2749/4117c835a962d28f3b43335d76ab6e683aacb987ca9052206f7772363f0b6f85?apiKey=c0fe919eaac64489a9f4a10f9a6e2749&" alt="Instagram" class="social-icon" loading="lazy" />
+        </a>
+        <a href="https://www.tiktok.com/@@aedifex303?lang=en">
+            <img src="https://cdn.builder.io/api/v1/image/assets/c0fe919eaac64489a9f4a10f9a6e2749/15ebd3074072396e93239b1e531dad61beaae0edfd26b90cf098c7be1780d56c?apiKey=c0fe919eaac64489a9f4a10f9a6e2749&" alt="Facebook" class="social-icon" loading="lazy" />
+    </div>
+    </a>
+</div>
+</div>
+
+<style>
+    body {
+        background-color: rgba(10, 10, 10, 1);
+        display: flex;
+        padding: 237px 0 96px;
+    }
+
+
+    .content-wrapper {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0 6px;
+    }
+
+    .main-content {
+        gap: 20px;
+        display: flex;
+    }
+
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 50%;
+        margin-left: 0;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        color: rgba(255, 255, 255, 1);
+        justify-content: start;
+    }
+
+    .section-title {
+        color: #FFF;
+        font-family: "ZT Bros Oskon 90s";
+        font-size: 172px;
+        font-style: normal;
+        font-weight: 100;
+        line-height: normal;
+    }
+
+    .text-content {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        font: 200 16px "Neue Haas Grotesk Display Pro", -apple-system, Roboto, Helvetica, sans-serif;
+    }
+
+    .company-intro {
+        margin-bottom: 24px;
+    }
+
+    .company-description {
+    }
+
+    .bold-text {
+        font-weight: 600;
+    }
+
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .about-image {
+        aspect-ratio: 1.97;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        margin-top: 35px;
+        flex-grow: 1;
+    }
+
+    .divider-section {
+        align-self: start;
+        display: flex;
+        margin-top: 102px;
+        align-items: center;
+        gap: 17px;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+    .divider-line {
+        align-self: stretch;
+        min-width: 240px;
+        width: 600px;
+        height: 2px;
+        margin: auto 0;
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+
+    .divider-icon {
+        aspect-ratio: 0.88;
+        object-fit: contain;
+        object-position: center;
+        width: 45px;
+        align-self: stretch;
+        margin: auto 0;
+    }
+
+    .divider-line-end {
+        align-self: stretch;
+        min-width: 240px;
+        width: 600px;
+        height: 0;
+        margin: auto 0;
+        border: 2px solid rgba(255, 255, 255, 1);
+    }
+
+    .vision-section {
+        margin-top: 53px;
+    }
+
+    .vision-content {
+        gap: 20px;
+        display: flex;
+    }
+
+    .vision-image {
+        aspect-ratio: 1.97;
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        margin-top: 50px;
+        flex-grow: 1;
+    }
+
+    .vision-text {
+        display: flex;
+        flex-direction: column;
+        color: rgba(255, 255, 255, 1);
+        text-align: right;
+        justify-content: start;
+    }
+
+    .vision-title {
+        color: #FFF;
+        font-family: "ZT Bros Oskon 90s";
+        font-size: 172px;
+        font-style: normal;
+        font-weight: 100;
+        line-height: normal;
+    }
+
+    .vision-description {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        font: 200 16px "Neue Haas Grotesk Display Pro", -apple-system, Roboto, Helvetica, sans-serif;
+    }
+
+    .mission-text {
+        margin-bottom: 24px;
+    }
+
+    .vision-text-content {
+
+    }
+
+    .social-media-section {
+        align-self: center;
+        display: flex;
+        margin-top: 197px;
+
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .social-title {
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        font: 300 36px Nohemi, sans-serif;
+    }
+
+    .social-icons {
+        align-self: center;
+        display: flex;
+        margin-top: 48px;
+        width: 172px;
+        max-width: 100%;
+        align-items: center;
+        gap: 40px 74px;
+        justify-content: space-between;
+    }
+
+    .social-icon {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 48px;
+        align-self: stretch;
+        margin: auto 0;
+    }
+</style>

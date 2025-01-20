@@ -23,4 +23,8 @@
     <None Include="wwwroot\ASSETS\WHYUS-3A.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="WordPressPCL" Version="2.1.0" />
+  </ItemGroup>
+
 </Project>

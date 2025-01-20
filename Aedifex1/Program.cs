@@ -1,9 +1,14 @@
+using Microsoft.Extensions.Options;
+using WordPressPCL;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+var client = new WordPressClient("http://localhost/aedifex/wp-json/");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
